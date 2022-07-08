@@ -6,8 +6,9 @@
     <script src="books.js" async></script>
   </head>
 
-  <body>
-    <!-books->
+-  <body>
+  <form name = "Purchase"onsubmit="return purchaseClicked()"></form>
+    <!--books-->
       <section class="container content-section">
         <h2 class="section-header">Books</h2><hr>
         <div class="shop-items">
@@ -48,7 +49,7 @@
             <span class="cart-total-price">Rs.0</span>
           </div>
           <hr>
-          <button id="purch" class="btn btn-primary btn-purchase" type="button">Purchase</button>
+          <button id="purch" class="btn btn-primary btn-purchase" type="submit" onsubmit="purchaseClicked()">Purchase</button>
         </section>
 
         <!-css->
